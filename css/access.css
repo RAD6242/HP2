@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+.how_to ul, .map {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.how_to ul {
+    line-height: 3;
+}
+
+.map {
+    display: flex;
+}
+
+.map iframe {
+    width: 55%; 
+    margin: 0 auto 0 0; 
+}
+
+.address {
+    width: 35%;
+    margin: 50px 0 80px auto;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.address h1 {
+    font-size: 48px;
+    margin-bottom: 60px;
+    padding: 40px 0 10px 0;
+    color: white;
+    background-color: rgb(118, 89, 81);
+    border: rgb(118, 89, 81) 1px solid;
+}
+
+
+.address span {
+    font-size: 24px;
+    position: relative;
+    top: -55px;
+    left: 65px;
+    letter-spacing: 20;
+    font-weight: 400;
+}
+
+.address p {
+    padding-bottom: 50px;
+    margin: 0 auto;
+}
+
+.address p span {
+    text-align: center;
+}
+
+/* iPad Proレスポンシブ */
+@media screen and (max-width: 1024px){
+    .map {
+        display: block;
+    }
+
+    .how_to ul, .map {
+        width: 90%;
+    }
+
+    .map iframe {
+        width: 100%;
+    }
+
+    .address {
+        width: 50%;
+        margin: 50px auto 0 auto;
+    }
+}
+
+/* iPad レスポンシブ */
+@media screen and (max-width: 768px){
+    .how_to ul, .map {
+        width: 95%;
+        margin: 10px auto 20px auto;
+    }
+
+    .address_logo {
+        width: 110%;
+        margin: 0 auto 60px auto;
+        position: relative;
+        left: -10%;
+    }
+
+    .address h1 {
+        text-align: left;
+        margin-bottom: 30px;
+        position: relative;
+    }
+
+}
+
+/* iPhoneXレスポンシブ */
+
+@media screen and (max-width: 480px){
+    .how_to ul {
+        line-height: 2;
+    }
+
+    .how_to ul li {
+        padding-bottom: 30px;
+    }
+
+    .address {
+        font-size: 16px;
+        width: 80%;
+    }
+
+    .address_logo {
+        width: 100%;
+        margin: 0 auto;
+        left: 0;
+    }
+
+    .address h1 {
+        font-size: 24px;
+        background-color: #f4f4f4;
+        color: black;
+        border: none;
+        top: 0;
+        left: 0;
+    }
+
+    .address h1 span {
+        letter-spacing: normal;
+        padding-right: 30px;
+        position:unset;
+    }
+}

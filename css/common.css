@@ -1,0 +1,481 @@
+@charset "UTF-8";
+
+html {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 18px;
+    line-height: 1.8;
+    background-image: url(../img/washi.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-color: rgba(225, 205, 190, 0.7);
+    background-blend-mode: darken;
+    letter-spacing: 1.2;
+    word-break: break-all;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+img {
+    object-fit: cover;
+    position: relative;
+}
+
+main {
+    padding-bottom: 100px;
+}
+
+h2 {
+    font-size: 36px;
+    padding: 40px 0 20px 0;
+}
+
+h2::before {
+    content: "";
+    display: inline-block;
+    border: 2px red solid;
+    margin-right: 30px;
+    height: 30px;
+}
+
+.header_nav {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    height: 150vh;
+    width: 150vh;
+    border-radius: 50%;
+    position: fixed;
+    top: -20vh;
+    left: -50vh;
+    text-align: center;
+    z-index: 3;
+    visibility: hidden;
+}
+
+.header_nav *:hover, .page_now{
+    color: orange;
+}
+
+.header_nav.active {
+    visibility: visible;
+}
+
+.header_nav h1 {
+    position: absolute;
+    top: 300px;
+    left: 540px;
+    margin: 0 auto;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.header_nav h1 span {
+    font-size: 24px;
+}
+
+.header_nav ul {
+    position: absolute;
+    top: 400px;
+    left: 570px;
+    margin: 0 auto;
+}
+
+.header_nav ul li {
+    margin-top: 20px;
+}
+
+.top .border_parts {
+    width: 100vw;
+    height: 10px;
+}
+
+.top_main {
+    width: 100vw;
+    height: 80vh;
+    opacity: 0.8;
+}
+
+.top_main_group p {
+    position: relative;
+}
+
+.page_view {
+    color: white;
+    font-size: 42px;
+    position: absolute;
+    width: 100vw;
+    height: 80vh;
+    top: 11px;
+    left: 0;
+    background-color: rgba(0, 0, 0,0.45);
+    text-align: center;
+    padding-top: 250px;
+}
+
+.top_logo {
+    width: 130px;
+    height: auto;
+    position: absolute;
+    right: 13%;
+    top: 80px;
+    padding: 7px;
+    border: rgb(118, 89, 81) 2px solid;
+    filter: drop-shadow(0 0 20px gray);
+    z-index: 2;    
+}
+
+.twitter {
+    width: 70px;
+    height: auto;
+    position: absolute;
+    right: 15%;
+    top: 430px;
+    z-index: 2;    
+}
+
+/* ハンバーガーメニュー */
+.openbtn {
+    position: fixed;
+    background-color: #fff;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    top: 80px;
+    left: 80px;
+    letter-spacing: normal;
+    border: black 2px solid;
+    box-shadow: 0 0 10px gray;
+    border-radius: 5px;
+    z-index: 5;
+    transform: scale(0.7);
+}
+
+.openbtn span {
+    display: inline-block;
+    transition: all 0.4s;
+    position: absolute;
+    left: 20px;
+    height: 3px;
+    border-radius: 3px;
+    background: #000;
+    width: 45%;
+}
+
+.openbtn span:nth-of-type(1) {
+    top: 18px;
+}
+
+.openbtn span:nth-of-type(2) {
+    top: 32px;
+}
+
+.openbtn span:nth-of-type(3) {
+    top: 46px;
+}
+
+.openbtn.active span:nth-of-type(1) {
+    top: 14px;
+    left: 18px;
+    transform: translateX(-10px) translateY(18px) rotate(-45deg);
+    width: 80%;
+}
+
+.openbtn.active span:nth-of-type(2) {
+    opacity: 0;
+}
+
+.openbtn.active span:nth-of-type(3) {
+    top: 26px;
+    left: 18px;
+    transform: translateX(-10px) translateY(6px) rotate(45deg);
+    width: 80%;
+}
+/* ハンバーガーメニュー */
+
+.main_section {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 70px;
+} 
+
+.article_parts {
+    height: 18px;
+    width: 104%;
+    left: -2%;
+    box-shadow: 0 7px 10px -5px rgb(70, 70, 70);
+    position: relative;
+}
+
+.article_main {
+    width: 95%;
+    margin: 0 auto;
+    background-color: #F4F4F4;
+}
+
+.article_inner {
+    width: 85%;
+    margin: 10px auto 80px auto;
+}
+
+footer {
+    color: white;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0,0.45);
+    padding-top: 40px;
+    font-size: 16px;
+}
+
+.footer_list {
+    display: flex;
+}
+
+.footer_logo {
+    width: 20%;
+    margin: 10px auto;
+    letter-spacing: 5;
+}
+
+.footer_logo h1 {
+    font-size: 48px;
+}
+
+.footer_logo a {
+    position: relative;
+    left: -50px;
+}
+
+.footer_logo span {
+    font-size: 24px;
+    position: relative;
+    top: -55px;
+    left: 60px;
+    letter-spacing: 20;
+    font-weight: 400;
+}
+
+.footer_link {
+    width:50%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10% 0 auto;
+} 
+
+.footer_link li {
+    display: block;
+}
+
+footer p {
+    padding: 0 30px 10px 0;
+    text-align: right;
+}
+
+/* iPad Proレスポンシブ */
+@media screen and (max-width: 1024px) {
+    .main_section {
+        width: 80%;
+        display: block;
+    }
+
+    .header_nav {
+        width: 101vw;
+        height: 101vh;
+        top: 0;
+        left: 0;
+        border-radius: 0;
+    }
+
+    .header_nav h1 {
+        left: 40%;
+    }
+
+    .header_nav ul{
+        left: 40%;
+    }
+
+    .header_nav ul li{
+        font-size: 24px;
+        margin-top: 80px;
+    }
+
+    .top_main{
+        height: 50vh;
+    }
+
+    .page_view {
+        height: 50vh;
+        padding-top: 330px;
+        font-size: 36px;
+    }
+
+    .footer_logo{
+        width: 25%;
+        margin-left: 100px;
+    }
+
+    .footer_logo h1{
+        font-size: 36px;
+    }
+}
+
+/* iPad レスポンシブ */
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 22px;
+    }
+
+    .main_section {
+        width: 90%;
+    }
+
+    .header_nav {
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        border-radius: 0;
+    }
+
+    .header_nav h1 {
+        top: 100px;
+        left: 38%;
+    }
+
+    .header_nav ul{
+        left: 38%;
+        top: 180px;
+    }
+
+    .header_nav ul li{
+        margin-top: 50px;
+    }
+
+    .top_main{
+        height: 45vh;
+    }
+
+    .page_view {
+        height: 45vh;
+        padding: 230px 0 0 0;
+        font-size: 28px;
+    }
+
+    .top_logo {
+        transform: scale(0.7);
+        right: 8%;
+        top: 20px;
+    }
+
+    .twitter {
+        right: 11.5%;
+        top: 365px;
+    }
+
+    .footer_list {
+        display: block;
+    }
+
+    .footer_logo{
+        width: 30%;
+        margin: 20px auto;
+    }
+
+    .footer_link{
+        width: 70%;
+        margin: 20px auto;
+    }
+}
+
+/* iPhoneXレスポンシブ */
+@media screen and (max-width: 480px){
+    html {
+        font-size: 14px;
+    }
+
+    h2::before {
+        margin-right: 15px;
+        height: 25px;
+    }
+
+    main {
+        padding-bottom: 20px;
+    }
+
+    .openbtn {
+        transform: scale(0.6);
+        top: 40px;
+        left: 20px;
+    }
+
+    .top_logo {
+        transform: scale(0.6);
+        top: 0;
+        right: 20px;
+    }
+
+    .page_view {
+        padding: 200px 0 0 0;
+        font-size: 20px;
+    }
+
+    .twitter {
+        width: 50px;
+        right: 16%;
+        top: 300px;
+    }
+
+    .header_nav h1 {
+        left: 25%;
+    }
+
+    .header_nav ul {
+        left: 25%;
+    }
+    
+    .header_nav ul li{
+        margin-top: 25px;
+    }
+
+    .main_section {
+        padding-top: 30px;
+    }
+
+    footer {
+        font-size: 13px;
+    }
+
+    .footer_list {
+        display: flex;
+    }
+
+    .footer_logo {
+        width: 40%;
+        margin: 35px auto 20px 50px;;
+    }
+
+    .footer_logo h1 {
+        font-size: 32px;
+    }
+    
+    .footer_logo span {
+        font-size: 18px;
+        letter-spacing: normal;
+    }
+
+    .footer_link {
+        width: 40%;
+        margin: 0 0 20px auto;
+        display: block;
+    }
+}
