@@ -91,6 +91,9 @@
         font-size: 20px;
     }
 
+    .plan_link {
+        margin: 30px auto;
+    }
 }
 
 /* iPad レスポンシブ */
@@ -123,6 +126,10 @@
         width: 90%;
         margin: 0 auto;
     }
+
+    .plan_link {
+        margin-top: 20px;
+    }
 }
 
 /* iPhoneXレスポンシブ */
@@ -146,7 +153,6 @@
 
     .plan_link {
         width: 98%;
-        margin: 20px auto;
     }
 
 }
