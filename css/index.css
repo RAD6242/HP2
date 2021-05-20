@@ -149,6 +149,19 @@ aside span{
     }
 }
 
+/* SurfaceDuoレスポンシブ */
+@media screen and (max-width: 540px){
+    .article_main {
+        margin-top: 50px;
+    }
+
+    .news_item {
+        padding: 20px 10px;
+        font-size: 13px;
+    }
+}
+
+
 /* iPhoneXレスポンシブ */
 @media screen and (max-width: 480px){
     .reserve_link {

@@ -107,6 +107,26 @@
 
 }
 
+/* SurfaceDuoレスポンシブ */
+@media screen and (max-width: 540px){
+    .photo_group {
+        gap: 10px;
+    }
+
+    .photo_group img {
+        height: 10em;
+    }
+
+    .photo_zoom p {
+        top: 30%;
+    }
+    
+    .photo_zoom img {
+        top: 13%;
+        width: 80vw;
+    }
+}
+
 /* iPhoneXレスポンシブ */
 @media screen and (max-width: 480px){
     .photo_group {
@@ -116,13 +136,8 @@
     .photo_group img {
         height: 5em;
     }
-
-    .photo_zoom p {
-        top: 30%;
-    }
     
     .photo_zoom img {
-        top: 13%;
         width: 85vw;
     }
 }

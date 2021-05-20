@@ -57,8 +57,8 @@
     color: black;
     width: 75%;
     border-radius: 15px;
-    border: 1px solid #000000;
-    background: linear-gradient(180deg, #FFFFFF 20%, #A3A3A3 100%);
+    background: linear-gradient(180deg, #f4f4f4, rgba(230, 120, 80, 0.8));
+    border: 1px solid #999999;
 }
 
 /* iPad Proレスポンシブ */
@@ -91,6 +91,7 @@
     .group_description a {
         margin-top: 30px;
         width: 60%;
+        padding: 20px 0;
     }
 }
 
@@ -101,7 +102,25 @@
         width: 60%;
         margin: 0 auto 0 0;
     }
+}
 
+/* SurfaceDuoレスポンシブ */
+@media screen and (max-width: 540px){
+    .time p{
+        width: 80%;
+        margin: 0 auto 0 0;
+    }
+    .menu_item {
+        width: 100%;
+    }
+
+    .menu_item img {
+        height: 250px;
+    }
+
+    .group_description a {
+        width: 70%;
+    }
 }
 
 /* iPhoneXレスポンシブ */
@@ -111,8 +130,8 @@
         margin: 0 auto 0 0;
     }
 
-    .menu_item {
-        width: 100%;
+    .menu_item img {
+        height: 160px;
     }
 
     .group {
